@@ -2,7 +2,7 @@
 function countdown() {
     const now = new Date();
     const currentYear = now.getFullYear();
-    const valentinesDay = new Date(`February 14, ${2025} 00:00:00`);
+    const valentinesDay = new Date(`February 14, ${currentYear} 00:00:00`);
     
     const timeDifference = valentinesDay - now;
     
