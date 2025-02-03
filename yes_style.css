@@ -15,6 +15,26 @@ body {
     margin-top: 20px;
     margin-bottom: 0px;
 }
+.button_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.next_button {
+    background-color: #FF69B4;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.next_button:hover {
+    background-color: #FF1493;
+}
 
 .gif_container {
     display: flex;
