@@ -4,10 +4,11 @@ body {
     align-items: center;
     height: 100vh;
     background-color: rgb(135,206,235); /* Updated background color */
+    font-family: Arial, sans-serif; /* Updated font */
 }
 
 .header_text {
-    font-family: 'Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Updated font */
     font-size: 40px;
     font-weight: bold;
     color: white;
@@ -15,6 +16,7 @@ body {
     margin-top: 20px;
     margin-bottom: 0px;
 }
+
 .button_container {
     display: flex;
     justify-content: center;
@@ -30,7 +32,7 @@ body {
     font-size: 16px;
     border-radius: 12px;
     transition: background-color 0.3s ease;
-    font-family: 'Geneva';
+    font-family: Arial, sans-serif; /* Updated font */
 }
 
 .next_button:hover {
