@@ -5,16 +5,25 @@ body {
     height: 100vh;
     background-color: rgb(135,206,235); /* Updated background color */
     font-family: Arial, sans-serif; /* Updated font */
+    background: #f8f6f1;
+    overflow: hidden;
 }
 
 .header_text {
     font-family: Arial, sans-serif; /* Updated font */
     font-size: 40px;
     font-weight: bold;
-    color: white;
+    color: rgba(255, 0, 102, 0.3);
     text-align: center;
     margin-top: 20px;
     margin-bottom: 0px;
+    background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+    -webkit-background-size: 150px;
+    -webkit-background-clip: text;
+    -webkit-animation-name: shine;
+    -webkit-animation-duration: 3s; /* Adjust the duration as needed */
+    -webkit-animation-iteration-count: infinite;
+    text-shadow: 0 0px 0px rgba(233, 85, 189, 0.419);
 }
 
 .button_container {
@@ -43,4 +52,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@-webkit-keyframes shine {
+    0%, 10% {
+        background-position: -1000px;
+    }
+    20% {
+        background-position: top left;
+    }
+    90% {
+        background-position: top right;
+    }
+    100% {
+        background-position: 1000px;
+    }
 }
