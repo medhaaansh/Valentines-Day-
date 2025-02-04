@@ -13,11 +13,31 @@ body {
     position: absolute;
     margin-left: 150px;
     transition: 0.5s;
+    background-color: #FF69B4;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
 }
 
 #yesButton {
     position: absolute;
     margin-right: 150px;
+    background-color: #FF69B4;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+}
+
+#noButton:hover, #yesButton:hover {
+    background-color: #FF1493;
 }
 
 .header_text {
@@ -72,6 +92,10 @@ body {
     border: none;
     border-radius: 12px;
     transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FF1493;
 }
 
 .gif_container {
