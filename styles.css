@@ -5,6 +5,8 @@ body {
     height: 90vh;
     background-color: rgb(135,206,235);
     font-family: Arial, sans-serif; /* Updated font */
+    background: #f8f6f1;
+    overflow: hidden;
 }
 
 #noButton {
@@ -22,17 +24,31 @@ body {
     font-family: Arial, sans-serif; /* Updated font */
     font-size: 30px;
     font-weight: bold;
-    color: rgb(255, 255, 255);
+    color: rgba(255, 0, 102, 0.3);
     text-align: center;
     margin-top: 20px;
     margin-bottom: 0;
+    background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+    -webkit-background-size: 150px;
+    -webkit-background-clip: text;
+    -webkit-animation-name: shine;
+    -webkit-animation-duration: 3s; /* Adjust the duration as needed */
+    -webkit-animation-iteration-count: infinite;
+    text-shadow: 0 0px 0px rgba(233, 85, 189, 0.419);
 }
 
 .countdown {
     font-family: Arial, sans-serif; /* Updated font */
     font-size: 30px;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: rgba(255, 0, 102, 0.3);
+    background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+    -webkit-background-size: 150px;
+    -webkit-background-clip: text;
+    -webkit-animation-name: shine;
+    -webkit-animation-duration: 3s; /* Adjust the duration as needed */
+    -webkit-animation-iteration-count: infinite;
+    text-shadow: 0 0px 0px rgba(233, 85, 189, 0.419);
 }
 
 .buttons {
@@ -99,5 +115,20 @@ body {
     .btn {
         padding: 15px 25px;
         font-size: 14px;
+    }
+}
+
+@-webkit-keyframes shine {
+    0%, 10% {
+        background-position: -1000px;
+    }
+    20% {
+        background-position: top left;
+    }
+    90% {
+        background-position: top right;
+    }
+    100% {
+        background-position: 1000px;
     }
 }
