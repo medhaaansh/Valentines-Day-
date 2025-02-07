@@ -4,7 +4,6 @@
     <link rel="stylesheet" href="./yes_style.css">
 </head> 
 <body>
-    <audio id="background-music" src="song.mp3" autoplay loop></audio> <!-- Ensure this path is correct -->
     <div class="container">
         <div>
             <h1 class="header_text">YAYAYAYAAAAAAA YOU SAID YES </h1>
@@ -20,18 +19,5 @@
             <h1 class="header_text">Like you had any other choice 🙄 </h1>
         </div>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var audio = document.getElementById('background-music');
-            if (!localStorage.getItem('audioPlaying')) {
-                audio.play();
-                localStorage.setItem('audioPlaying', 'true');
-            }
-
-            audio.addEventListener('ended', function() {
-                localStorage.removeItem('audioPlaying');
-            });
-        });
-    </script>
 </body> 
 </html>
