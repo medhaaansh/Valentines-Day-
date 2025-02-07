@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="flipbook_style.css">
 </head>
 <body>
-  <audio id="background-music" src="song.mp3" autoplay loop></audio> <!-- Ensure this path is correct -->
+  <iframe id="audio-frame" src="audio.html" style="display:none;"></iframe> 
 
   <div id="hedlinecontainer">
     <div id="shine">Happy Valentine's Day💞</div>
@@ -20,19 +20,5 @@
     <img src="image4.jpg" alt="CUTIEEEEE">
     <img src="image5.jpg" alt="WE'RE SO CUTE HEHEHE">
   </div>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var audio = document.getElementById('background-music');
-      if (!localStorage.getItem('audioPlaying')) {
-        audio.play();
-        localStorage.setItem('audioPlaying', 'true');
-      }
-
-      audio.addEventListener('ended', function() {
-        localStorage.removeItem('audioPlaying');
-      });
-    });
-  </script>
 </body>
 </html>
