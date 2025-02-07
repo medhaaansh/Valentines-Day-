@@ -7,5 +7,18 @@
 </head>
 <body>
     <audio id="background-music" src="song.mp3" autoplay loop></audio> <!-- Ensure this path is correct -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var audio = document.getElementById('background-music');
+            if (!localStorage.getItem('audioPlaying')) {
+                audio.play();
+                localStorage.setItem('audioPlaying', 'true');
+            }
+
+            audio.addEventListener('ended', function() {
+                localStorage.removeItem('audioPlaying');
+            });
+        });
+    </script>
 </body>
 </html>
